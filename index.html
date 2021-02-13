@@ -1,0 +1,404 @@
+<html>
+<head>
+<style>
+*{
+margin:0;
+}
+.hotel_box{
+height:350px;
+width:400px;
+background-color:white;
+padding:5px;
+    display: inline-block;
+	cursor: pointer;
+	    margin: 4;
+}
+a{
+color:black;
+text-decoration:none;
+
+
+}
+.content{
+margin: 0 auto;
+    position: relative;
+padding:20px;
+min-height:calc( - 30px - 80px -100vh - 220px);
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+background-color:#333333;
+}
+
+
+.photo img{
+    max-width: 100%;
+    max-height: 70%;
+    }
+.photo img:hover{
+opacity:0.6;
+    }
+	
+	
+.price{
+display:flex;
+}
+.price h5{
+    color: #fdaf00;
+
+}
+.buy_now{
+text-align: center;
+position:relative;
+right:0;
+height:30px;
+width:100px;
+background-color: #15195a;
+color: white;
+
+}
+
+.buy_now a{
+text-decoration:none;
+color: white;
+}
+
+
+.buy_now:hover{
+height:35px;
+width:105px;
+background-color:yellow;
+color:black;
+   
+
+}
+.price_buy_now{
+display:flex;
+justify-content: space-between;
+}
+.price_buy_now h6{
+margin-top:7px;
+}
+.detail h2 h4{
+margin-top:5px;
+}
+.nav_bar{
+
+height:30px;
+background-color:#15195a;;
+    padding: 15px;
+}
+.nav_bar ul{
+list-style:none;
+display:flex;
+}
+.nav_bar ul li a{
+text-decoration:none;
+padding:5px;
+font-size: 27px;
+color:white;
+margin-right:29px;
+}
+
+.nav_bar ul li{
+
+}
+.image_parts::before{
+
+height:100vh;
+width:100%;
+background: url(file/uu.jpg) no-repeat center center/cover;
+content: "";
+position: absolute;
+z-index: -2;
+}
+.image_parts{
+height:100vh;
+display: flex;
+  
+    
+    justify-content: center;
+}
+.image_parts h1{
+    font-size:56px;
+color:white;
+font-family: fangsong;
+text-shadow: 6px 2px 10px black;
+	    margin-top: 64px;
+	
+}
+.btn{
+    height: 33px;
+    margin-top: 85;
+    background-color: black;
+    color: antiquewhite;
+    border-radius: 12%;
+	 cursor: pointer;
+}
+.btn:hover{
+background-color: white;
+    color: black;
+}
+.image_parts select:hover{
+    
+    background-color:#dcc4c4 ;
+    color: black;
+}
+
+.image_parts select{
+    height: 33px;
+    width: 300px;
+    margin-top: 85;
+    margin-left: 19;
+    background-color: #5d5757;
+    color: #dcc4c4;
+    cursor: pointer;
+}
+
+.our_service{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 220px;
+	    background-color: #3333338c;
+    color: white;
+}
+.image_parts select h1, h3 {
+    border-bottom: 2px solid white;
+    font-family: cursive;
+}
+.footer{
+height:80px;
+background-color:blue;
+padding-top:15px;
+}
+.footer h1{
+color:white;
+text-align: center;
+}
+.nav_bar ul li a:hover{
+border-bottom: 2px solid white;
+
+}
+
+	@media screen and (max-width:1207px){
+.nav_bar{
+    position: sticky;
+	top:0px;
+
+}
+	
+	.nav_bar ul li a{
+text-decoration:none;
+font-size: 16px;
+color:white;
+margin-right:29px;
+}}
+	
+
+
+
+
+</style>
+
+</head>
+<body>
+	<header class="nav_bar">
+		<div >
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="file/about.html">About us</a></li>
+				<li><a href="file/contact.html">Contact Us</a></li>
+			</ul>
+		</div>
+	</header>
+	
+	<div class="image_parts">
+		<h1>Search hotel near by</h1>
+		<select name="hotel-location-place">
+			<option value="kathmandu1">kathmandu</option>
+			<option value="butwal1">butwal</option>
+			<option value="bhairawaha1">bhairawaha</option>
+			<option value="pokhara1">pokhara</option>
+			<option value="pokhara1">palpa</option>
+			<option value="pokhara1">shainja</option>
+			<option value="pokhara1">kotihawa</option>
+			<option value="pokhara1">bardaghat</option>
+
+		</select>
+		<button class="btn">SEARCH</button>
+
+	</div>
+	<div class="our_service">
+		<h1>OUR SERVICE</h1>
+		<h3>I hope you will find your desirable hotel</h3>
+	</div>
+
+	<div class="content">
+		<a href="file/video.html"> <div class="hotel_box">
+			<div class="photo">
+				<img src="file/1.jpg" alt ="there should be photo">
+			</div>
+			<div class="detail">
+				<h2>A hotel</h2>
+				<h4>location:bharatpur, chtiwan</h4>
+				<div class="price_buy_now">
+					<div class="price">
+						<h4>price:</h4><h5>RS 20000</h5>
+					</div>
+					<div class="buy_now">
+						<h6><a href="file/video.html">BOOK NOW</a></h6>
+					</div>
+				</div>
+			</div>
+		</div></a>
+		<a href="file/video.html">  <div class="hotel_box">
+			<div class="photo">
+				<img src="file/2.jpg" alt ="there should be photo" >
+			</div>
+			<div class="detail">
+				<h2>B hotel</h2>
+				<h4>location:bharatpur, chtiwan</h4>
+				<div class="price_buy_now">
+					<div class="price">
+						<h4>price:</h4><h5>RS 20000</h5>
+					</div>
+					<div class="buy_now">
+						<h6><a href="file/video.html">BOOK NOW</a></h6>
+					</div>
+				</div>
+			</div>
+		</div></a>
+<a href="file/video.html"> <div class="hotel_box">
+<div class="photo">
+<img src="file/3.jpg" alt ="there should be photo">
+</div>
+<div class="detail">
+<h2>C hotel</h2>
+<h4>location:bharatpur, chtiwan</h4>
+<div class="price_buy_now">
+<div class="price">
+<h4>price:</h4><h5>RS 20000</h5>
+</div>
+<div class="buy_now">
+<h6><a href="file/video.html">BOOK NOW</a></h6>
+</div>
+</div>
+</div>
+</div></a>
+<a href="file/video.html"> <div class="hotel_box">
+<div class="photo">
+<img src="file/4.jpg" alt ="there should be photo">
+</div>
+<div class="detail">
+<h2>D hotel</h2>
+<h4>location:bharatpur, chtiwan</h4>
+<div class="price_buy_now">
+<div class="price">
+<h4>price:</h4><h5>RS 20000</h5>
+</div>
+<div class="buy_now">
+<h6><a href="file/video.html">BOOK NOW</a></h6>
+</div>
+</div>
+</div>
+</div></a>
+<a href="file/video.html"> <div class="hotel_box">
+<div class="photo">
+<img src="file/1.jpg" alt ="there should be photo">
+</div>
+<div class="detail">
+<h2>E hotel</h2>
+<h4>location:bharatpur, chtiwan</h4>
+<div class="price_buy_now">
+<div class="price">
+<h4>price:</h4><h5>RS 20000</h5>
+</div>
+<div class="buy_now">
+<h6><a href="file/video.html">BOOK NOW</a></h6>
+</div>
+</div>
+</div>
+</div></a>
+<a href="file/video.html"> <div class="hotel_box">
+<div class="photo">
+<img src="file/2.jpg" alt ="there should be photo">
+</div>
+<div class="detail">
+<h2>F hotel</h2>
+<h4>location:bharatpur, chtiwan</h4>
+<div class="price_buy_now">
+<div class="price">
+<h4>price:</h4><h5>RS 20000</h5>
+</div>
+<div class="buy_now">
+<h6><a href="file/video.html">BOOK NOW</a></h6>
+</div>
+</div>
+</div>
+</div></a>
+<a href="file/video.html"> <div class="hotel_box">
+<div class="photo">
+<img src="file/3.jpg" alt ="there should be photo">
+</div>
+<div class="detail">
+<h2>G hotel</h2>
+<h4>location:bharatpur, chtiwan</h4>
+<div class="price_buy_now">
+<div class="price">
+<h4>price:</h4><h5>RS 20000</h5>
+</div>
+<div class="buy_now">
+<h6><a href="file/video.html">BOOK NOW</a></h6>
+</div>
+</div>
+</div>
+</div></a>
+<a href="file/video.html"> <div class="hotel_box">
+<div class="photo">
+<img src="file/4.jpg" alt ="there should be photo">
+</div>
+<div class="detail">
+<h2>H hotel</h2>
+<h4>location:bharatpur, chtiwan</h4>
+<div class="price_buy_now">
+<div class="price">
+<h4>price:</h4><h5>RS 20000</h5>
+</div>
+<div class="buy_now">
+<h6><a href="file/video.html">BOOK NOW</a></h6>
+</div>
+</div>
+</div>
+</div></a>
+	<a href="file/video.html"> <div class="hotel_box">
+		<div class="photo">
+			<img src="file/1.jpg" alt ="there should be photo">
+			</div>
+			<div class="detail">
+			<h2>I hotel</h2>
+			<h4>location:bharatpur, chtiwan</h4>
+			<div class="price_buy_now">
+			<div class="price">
+			<h4>price:</h4><h5>RS 20000</h5>
+			</div>
+			<div class="buy_now">
+			<h6><a href="file/video.html">BOOK NOW</a></h6>
+			</div>
+			</div>
+			</div>
+	</div></a> 
+</div>
+</main>
+<footer class="footer">
+<h1>copyright@</h1>
+</footer>
+
+
+</body>
+
+
+
+</html>
